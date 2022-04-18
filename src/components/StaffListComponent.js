@@ -43,6 +43,7 @@ class StaffList extends Component {
                             <CardText>Ngày sinh: {dateFormat(selectedStaff.doB, "dd/mm/yyyy")}</CardText>
                             <CardText>Ngày vào công ty: {dateFormat(selectedStaff.startDate, "dd/mm/yyyy")}</CardText>
                             <CardText>Phòng ban: {selectedStaff.department.name}</CardText>
+                            <CardText>Chức danh: {selectedStaff.staffRole}</CardText>
                             <CardText>Số ngày nghỉ còn lại: {selectedStaff.annualLeave}</CardText>
                             <CardText>Số ngày đã làm thêm: {selectedStaff.overTime}</CardText>
                         </CardBody>
