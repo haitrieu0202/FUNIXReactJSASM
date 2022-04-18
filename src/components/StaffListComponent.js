@@ -67,7 +67,7 @@ class StaffList extends Component {
                 <div className='colSelected'>
                     <button className='btn btn-warning' onClick={() => this.selectedCol2()}>2 cột</button>
                     <button className='col3 btn btn-warning'onClick={() => this.selectedCol3()}>3 cột</button>
-                    <button className='btn btn-warning'onClick={() => this.selectedCol6()}>6 cột</button>
+                    <button className='col6 btn btn-warning'onClick={() => this.selectedCol6()}>6 cột</button>
                 </div>
                 <div>{staffPost}</div><br></br>
                 <div>{this.renderInfo(this.state.selectedStaff)}</div>
