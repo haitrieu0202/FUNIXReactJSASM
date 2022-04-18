@@ -1,6 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
-import { STAFFS } from './shared/staffs';
+import StaffList from './components/HTND'
+
 
 function App() {
   return (
@@ -9,6 +9,7 @@ function App() {
         <h4>
           Ứng dụng quản lý nhân sự v1.0
         </h4>
+        <StaffList />
       </header>
     </div>
   );
