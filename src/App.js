@@ -1,5 +1,5 @@
 import './App.css';
-import StaffList from './components/HTND'
+import StaffList from './components/StaffListComponent'
 
 
 function App() {

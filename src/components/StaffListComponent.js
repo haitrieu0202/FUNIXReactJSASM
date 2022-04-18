@@ -1,68 +1,52 @@
 import React, { Component } from 'react';
-import { Card, CardBody, CardImg, CardImgOverlay, CardTitle } from "reactstrap";
+import { Card, CardBody, CardImg, CardText, CardTitle } from 'reactstrap';
 import { STAFFS } from './shared/staffs';
+import dateFormat from "dateformat";
 
 class StaffList extends Component {
     constructor(props) {
         super(props);
-        this.StaffLists = STAFFS;
+        this.StaffList = STAFFS;
         this.state = {
-            selectedStaff: null,
-          };
+            selectedStaff : null
+        }
     }
-    onStaffSelect(staff) {
-        this.setState ({
-          selectedStaff: staff
-        });
-      }    
-     render2 (selectedStaff) {
-         if (selectedStaff != null) {
-            return (
+    clickStaff(infoStaff) {
+        this.setState({
+            selectedStaff : infoStaff
+        })
+    }
+    renderInfo(selectedStaff) {
+        if (selectedStaff != null) {
+            return(
                 <div>
-                <p>{selectedStaff.id}</p>
-                </div>
-            )
-         }
-     }
+                    <Card>
+                        <CardImg top width="100%" src={selectedStaff.image} alt={selectedStaff.name} />
+                        <CardBody>
+                            <CardTitle>Họ và tên: {selectedStaff.name}</CardTitle>
+                            <CardText>Ngày sinh: {dateFormat(selectedStaff.doB, "dd/mm/yyyy")}</CardText>
+                            <CardText>Ngày vào công ty: {dateFormat(selectedStaff.startDate, "dd/mm/yyyy")}</CardText>
+                            <CardText>Phòng ban: {selectedStaff.department.name}</CardText>
+                            <CardText>Số ngày nghỉ còn lại: {selectedStaff.annualLeave}</CardText>
+                            <CardText>Số ngày đã làm thêm: {selectedStaff.overTime}</CardText>
+                        </CardBody>
+                    </Card>
+                </div>    
+            )    
+        }
+    }
     render() {
-        const StaffNV = this.StaffLists.map((staff) => {
+        const staffPost = this.StaffList.map((props) => {
             return (
-                <div className="StaffList"> 
-                    <div>  
-                        <Card onClick={() => this.onStaffSelect(staff)}>
-                        <p>{staff.name}</p>
-                        </Card>
-                    </div>
-                    
-                </div>
-                
-            );
+                <CardTitle onClick={() => this.clickStaff(props)} key={props.id}>{props.name}</CardTitle>
+            )
         })
         return (
             <div>
-            {StaffNV}
-            <div id="rootht">{this.render2 (this.state.selectedStaff)}</div>
+                {staffPost}
+                <div>{this.renderInfo(this.state.selectedStaff)}</div>
             </div>
         )
     }
-    
-    
 }
-// return (
-//     <div className="StaffList"> 
-//        {
-//            this.StaffLists.map((props) => (
-//            <div>    
-//                 <p>{props.name}</p>
-//                 <Card onClick={() => this.onStaffSelect()}>
-//                 <CardTitle>{props.name}</CardTitle>
-//                 </Card>
-//            </div>
-//            ))
-//        }
-//        <div id="rootht"></div>
-//     </div>
-// );
-// })
-
 export default StaffList;
