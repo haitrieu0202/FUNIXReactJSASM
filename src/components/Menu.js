@@ -1,1 +1,28 @@
-import { Navbar, NavbarBrand, Nav, NavbarToggler } from 'reactstrap';
+import {
+    Navbar,
+    NavbarBrand,
+    Nav,
+    NavbarToggler,
+    NavItem
+} from 'reactstrap';
+import React from 'react';
+
+function Menu() {
+    return (
+        <Navbar dark color="primary">
+            <NavbarBrand>
+                <img src="assets/images/logo.png" alt='Staff Image'></img>
+            </NavbarBrand>
+            <NavbarBrand>
+            <i className="fa-solid fa-users"></i> Nhân Viên
+            </NavbarBrand>
+            <NavbarBrand>
+            <i className="fa-solid fa-id-card"></i> Phòng Ban
+            </NavbarBrand>
+            <NavbarBrand>
+            <i className="fa-solid fa-money-check-dollar"></i> Bảng Lương
+            </NavbarBrand>
+        </Navbar>
+    )
+}
+export default Menu;
