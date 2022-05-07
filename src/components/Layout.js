@@ -1,11 +1,11 @@
 import React from 'react';
 import Menu from './Menu';
 
-function Page() {
+function Layout() {
     return (
         <div>
             <Menu />
         </div>
     )
 }
-export default Page;
+export default Layout;
