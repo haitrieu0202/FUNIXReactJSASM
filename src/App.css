@@ -1,0 +1,44 @@
+body {
+  width: 95%;
+  margin: auto;
+  font-size: larger;
+}
+.oneStaff {
+  margin-bottom: 5px;
+  text-align: center;
+  padding-top: 8px;
+  cursor: pointer;
+}
+.colSelected {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-align: center;
+}
+.col3 {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.divfull {
+  display: inline-block;
+}
+.staffCard {
+  margin: auto;
+}
+@media (min-width: 768px) and (max-width: 991.9px) {
+.col6 {
+  display: none;
+}
+.col2, .col3 {
+  margin: 0% 10%;
+} 
+    
+} 
+@media screen and (max-width: 767.9px) {
+.col3, .col6 {
+  display: none;
+} 
+.container {
+  text-align: center;
+} 
+}
+ 
