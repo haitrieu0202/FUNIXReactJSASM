@@ -12,7 +12,7 @@ function Menu() {
     return (
         <Navbar dark color="primary">
             <NavbarBrand>
-                <img src="assets/images/logo.png" alt='Staff Image'></img>
+                <img src="assets/images/logo.png" alt='Logo' width='45px'></img>
             </NavbarBrand>
             <NavbarBrand>
                 <NavLink to='/staffs'>
@@ -20,10 +20,14 @@ function Menu() {
                 </NavLink>
             </NavbarBrand>
             <NavbarBrand>
-                <i className="fa-solid fa-id-card"></i> Phòng Ban
+                <NavLink to='/department'>
+                    <i className="fa-solid fa-id-card"></i> Phòng Ban
+                </NavLink>    
             </NavbarBrand>
             <NavbarBrand>
-                <i className="fa-solid fa-money-check-dollar"></i> Bảng Lương
+                <NavLink to='/salary'>
+                    <i className="fa-solid fa-money-check-dollar"></i> Bảng Lương
+                </NavLink>         
             </NavbarBrand>
         </Navbar>
     )

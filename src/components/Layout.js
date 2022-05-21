@@ -2,13 +2,17 @@ import React, {useState} from 'react';
 import Menu from './Menu';
 import StaffInfor from './StaffInfor';
 import StaffList from './StaffList';
+import Department from './Department';
+import Salary from './Salary';
 import {Switch, Route} from 'react-router-dom';
 import { STAFFS } from './shared/staffs';
+import { DEPARTMENTS } from './shared/staffs';
 
 
 function Layout() {
     const [officeStaff] = useState({
-        staffs: STAFFS
+        staffs: STAFFS,
+        departments: DEPARTMENTS
     })
     const IdSellected = ({match}) => {
         return (
@@ -21,8 +25,10 @@ function Layout() {
         <div>
             <Menu />
             <Switch>
-            <Route exact path='/staffs' component={()=><StaffList staffs={officeStaff.staffs}/>} />
-            <Route path='/staffs/:staffsId' component={IdSellected} />
+                <Route exact path='/staffs' component={()=><StaffList staffs={officeStaff.staffs}/>} />
+                <Route path='/staffs/:staffsId' component={IdSellected} />
+                <Route path='/department' component={()=><Department depart={officeStaff.departments}/>} />
+                <Route path='/salary' component={()=><Salary salary={officeStaff.staffs}/>} />
             </Switch>
         </div>
     )
