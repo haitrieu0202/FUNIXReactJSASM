@@ -16,8 +16,11 @@ function Department(props) {
             </div>
         )
     })
-    return <div className='post row'>{department}</div>
-        
+    return (
+        <div>
+            <div className='post row'>{department}</div>
+        </div>
+    )    
     
 }
 

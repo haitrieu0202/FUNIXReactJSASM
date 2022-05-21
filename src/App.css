@@ -6,6 +6,7 @@ body {
 
 .name {
   text-align: center;
+  color: rgba(0, 0, 0, 0.805);
 }
 .post {
   width: 95%;
@@ -22,6 +23,23 @@ body {
   background-color: aliceblue;
   padding:2%
 }
+.logo {
+  padding-left: 30px;
+}
+/* .nav-link {
+  color:beige
+}
+.nav-link:hover {
+  color: rgb(56, 241, 198);
+} */
+
+/* .titcolor {
+  color: rgb(239, 234, 234);
+}
+.titcolor:hover {
+  text-decoration: none;
+  color: aliceblue; */
+
 /* .oneStaff {
   margin-bottom: 5px;
   text-align: center;

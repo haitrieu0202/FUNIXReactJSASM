@@ -22,7 +22,7 @@ function StaffList(props) {
     })
     return (
     <div className='post'>
-        <h2>Nhân Viên</h2><hr></hr>
+        <h3>Nhân Viên</h3><hr></hr>
         <div className='row'>{listRender}</div>
     </div>    
     ) 
