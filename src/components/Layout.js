@@ -4,6 +4,7 @@ import StaffInfor from './StaffInfor';
 import StaffList from './StaffList';
 import Department from './Department';
 import Salary from './Salary';
+import SalarySort from './SalarySort';
 import {Switch, Route} from 'react-router-dom';
 import { STAFFS } from './shared/staffs';
 import { DEPARTMENTS } from './shared/staffs';
@@ -21,6 +22,7 @@ function Layout() {
             } />
         )
     };
+    
     return (
         <div>
             <Menu />
@@ -28,7 +30,8 @@ function Layout() {
                 <Route exact path='/staffs' component={()=><StaffList staffs={officeStaff.staffs}/>} />
                 <Route path='/staffs/:staffsId' component={IdSellected} />
                 <Route path='/department' component={()=><Department depart={officeStaff.departments}/>} />
-                <Route path='/salary' component={()=><Salary salary={officeStaff.staffs}/>} />
+                <Route exact path='/salary' component={()=><Salary salary={officeStaff.staffs}/>} />
+                <Route path='/salary/sort' component={()=><SalarySort salaryscale={officeStaff.staffs}/>} />
             </Switch>
         </div>
     )

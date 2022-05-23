@@ -6,8 +6,10 @@ import { Card, CardBody, CardImg, CardText, CardTitle } from 'reactstrap';
 
 
 function StaffList(props) {
-    
-    const listRender = props.staffs.map((staff) => {
+    const arraysort = props.staffs.sort(function(staff1, staff2){
+        return staff1.id - staff2.id;
+    });
+    const listRender = arraysort.map((staff) => {
         const url = `/staffs/${staff.id}`
         return (
             <CardBody key={staff.id} className="staff col-lg-2 col-md-4 col-sm-6 p-0">
