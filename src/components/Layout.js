@@ -9,7 +9,6 @@ import {Switch, Route} from 'react-router-dom';
 import { STAFFS } from './shared/staffs';
 import { DEPARTMENTS } from './shared/staffs';
 
-
 function Layout() {
     const [officeStaff] = useState({
         staffs: STAFFS,
@@ -37,4 +36,5 @@ function Layout() {
         </div>
     )
 }
+
 export default Layout;
