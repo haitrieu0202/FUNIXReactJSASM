@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 import {Breadcrumb, BreadcrumbItem} from "reactstrap";
-import { Card, CardBody, CardImg, CardText, CardTitle } from 'reactstrap';
+import { Card, CardTitle } from 'reactstrap';
 
 function Salary(props) {
     const arraysort = props.salary.sort(function(staff1, staff2){
@@ -36,7 +36,6 @@ function Salary(props) {
             <div className='post row'>{money}</div>
         </div>
     )    
-    
 }
 
 export default Salary;
