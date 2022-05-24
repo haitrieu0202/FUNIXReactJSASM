@@ -2,9 +2,7 @@ import {
     Navbar,
     NavbarBrand,
     Nav,
-    NavbarToggler,
-    NavItem,
-    Collapse
+    NavItem
 } from 'reactstrap';
 import React from 'react';
 import {NavLink} from 'react-router-dom';
@@ -40,4 +38,5 @@ function Menu() {
         </div>
     )
 }
+
 export default Menu;
