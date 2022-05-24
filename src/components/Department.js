@@ -1,8 +1,5 @@
-
-import { Card, CardBody, CardImg, CardText, CardTitle } from 'reactstrap';
+import { Card, CardTitle } from 'reactstrap';
 import React from 'react';
-
-
 
 function Department(props) {
     
@@ -21,7 +18,6 @@ function Department(props) {
             <div className='post row'>{department}</div>
         </div>
     )    
-    
 }
 
 export default Department;
