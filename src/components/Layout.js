@@ -27,6 +27,7 @@ function Layout() {
         <div>
             <Menu />
             <Switch>
+                <Route exact path='/' component={()=><StaffList staffs={officeStaff.staffs}/>} />
                 <Route exact path='/staffs' component={()=><StaffList staffs={officeStaff.staffs}/>} />
                 <Route path='/staffs/:staffsId' component={IdSellected} />
                 <Route path='/department' component={()=><Department depart={officeStaff.departments}/>} />

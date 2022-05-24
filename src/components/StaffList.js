@@ -1,9 +1,6 @@
-
 import React from 'react';
 import {Link} from "react-router-dom";
-import { Card, CardBody, CardImg, CardText, CardTitle } from 'reactstrap';
-
-
+import { Card, CardBody, CardImg, CardTitle } from 'reactstrap';
 
 function StaffList(props) {
     const arraysort = props.staffs.sort(function(staff1, staff2){
