@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import Menu from './Menu';
+import Footer from './Footer';
 import StaffInfor from './StaffInfor';
 import StaffList from './StaffList';
 import Department from './Department';
@@ -33,6 +34,7 @@ function Layout() {
                 <Route exact path='/salary' component={()=><Salary salary={officeStaff.staffs}/>} />
                 <Route path='/salary/sort' component={()=><SalarySort salaryscale={officeStaff.staffs}/>} />
             </Switch>
+            <Footer />
         </div>
     )
 }

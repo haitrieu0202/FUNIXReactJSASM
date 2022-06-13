@@ -26,3 +26,29 @@ body {
 .logo {
   padding-left: 30px;
 }
+.social {
+  margin: auto;
+  font-size: 200%;
+}
+.mailto {
+  color: rgb(8, 92, 227);
+  text-decoration: underline;
+}
+.go {
+  color:#A52A2A
+}
+.fa {
+  color:#200363
+}
+.ldin {
+  color:#1665e2
+}
+.tw {
+  color:#1085b4
+}
+.yo {
+  color:#A52A2A
+}
+.gm {
+  color:#180202cb
+}

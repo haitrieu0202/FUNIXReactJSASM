@@ -31,7 +31,7 @@ function Salary(props) {
                 </Breadcrumb>
             </div>
             <Link to='/salary/sort'>
-                <button type="button" class="btn btn-info">Sắp xếp theo mức lương</button>    
+                <button type="button" className="btn btn-info">Sắp xếp theo mức lương</button>    
             </Link>                
             <div className='post row'>{money}</div>
         </div>
