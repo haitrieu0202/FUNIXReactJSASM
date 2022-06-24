@@ -32,7 +32,7 @@ function Salary(props) {
             </div>
             <Link to='/salary/sort'>
                 <button type="button" className="btn btn-info">Sắp xếp theo mức lương</button>    
-            </Link>                
+            </Link>               
             <div className='post row'>{money}</div>
         </div>
     )    
