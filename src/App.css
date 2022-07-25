@@ -1,0 +1,57 @@
+body {
+  width: 95%;
+  margin: auto;
+  font-size: larger;
+}
+
+.name {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.805);
+}
+.post {
+  width: 95%;
+  margin: auto;
+  padding-top: 10px;
+}
+.marginbot {
+  margin-bottom: 5%;
+  padding-left:5%;
+  padding-right:5%;
+  padding-top: 2%;
+}
+.salary {
+  background-color: aliceblue;
+  padding:2%
+}
+.logo {
+  padding-left: 30px;
+}
+.social {
+  margin: auto;
+  font-size: 200%;
+}
+.mailto {
+  color: rgb(8, 92, 227);
+  text-decoration: underline;
+}
+.go {
+  color:#A52A2A
+}
+.fa {
+  color:#200363
+}
+.ldin {
+  color:#1665e2
+}
+.tw {
+  color:#1085b4
+}
+.yo {
+  color:#A52A2A
+}
+.gm {
+  color:#180202cb
+}
+.text-danger {
+  font-size: 85% ;
+}
